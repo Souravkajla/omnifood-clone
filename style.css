@@ -5,6 +5,21 @@
   z-index: 1;
 }
 
+*:focus {
+  box-shadow: 0 0 0 8px rgba(230, 125, 34, 0.5);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#8017c4, #3561f2);
+  border-radius: 10px;
+  height: 200px;
+}
+
 #header {
   background-color: #fdf2e9;
   height: 10vh;
@@ -21,6 +36,7 @@
 
 #headertext {
   display: flex;
+  align-items: center;
   font-size: 17px;
   font-family: "rubik", sans-serif;
   font-weight: 600;
@@ -35,75 +51,31 @@
 }
 
 #how {
-  border: 8px solid transparent;
   text-decoration: none;
   color: #333333;
   transition: all 0.3s;
   transition-timing-function: ease;
-  border-bottom: 2px solid transparent;
-}
-
-#how:hover {
-  border-bottom: 2px solid currentColor;
-}
-
-#how:focus {
-  border: 8px solid #f1b885;
-  margin-top: -8px;
 }
 
 #meal {
-  border: 8px solid transparent;
   text-decoration: none;
   color: #333333;
   transition: all 0.3s;
   transition-timing-function: ease;
-  border-bottom: 2px solid transparent;
-}
-
-#meal:hover {
-  border-bottom: 2px solid currentColor;
-}
-
-#meal:focus {
-  border: 8px solid #f1b885;
-  margin-top: -8px;
 }
 
 #test {
-  border: 8px solid transparent;
   text-decoration: none;
   color: #333333;
   transition: all 0.3s;
   transition-timing-function: ease;
-  border-bottom: 2px solid transparent;
-}
-
-#test:hover {
-  border-bottom: 2px solid currentColor;
-}
-
-#test:focus {
-  border: 8px solid #f1b885;
-  margin-top: -8px;
 }
 
 #price {
-  border: 8px solid transparent;
   text-decoration: none;
   color: #333333;
   transition: all 0.3s;
   transition-timing-function: ease;
-  border-bottom: 2px solid transparent;
-}
-
-#price:hover {
-  border-bottom: 2px solid currentColor;
-}
-
-#price:focus {
-  border: 8px solid #f1b885;
-  margin-top: -8px;
 }
 
 #how:hover,
@@ -122,12 +94,11 @@
   text-decoration: none;
   padding: 10px 25px 10px 25px;
   background-color: #e67e22;
-  border-radius: 20px;
+  border-radius: 10px;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 8px solid #fdf2e9;
   box-sizing: border-box;
   transition: all 0.3s;
   transition-timing-function: ease;
@@ -135,11 +106,6 @@
 
 #button:hover {
   background-color: #d2711f;
-}
-
-#button:focus {
-  border: 8px solid #f1b885;
-  border-radius: 20px;
 }
 
 /* ******************** 
@@ -190,59 +156,48 @@ New Styling
 }
 
 .eating {
-  height: 66px;
-  width: 216px;
+  height: 50px;
+  width: 210px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #e67e22;
-  border-radius: 20px;
+  border-radius: 10px;
   color: #fff;
   font-size: 20px;
   font-weight: 600;
   font-family: "rubik", sans-serif;
   cursor: pointer;
   text-decoration: none;
-  border: 8px solid #fdf2e9;
-  box-sizing: border-box;
   transition: all 0.5s;
 }
 
-#eating:focus {
-  border: 8px solid #f1b885;
-}
-
-#eating:hover {
+.eating:hover {
   background-color: #d2711f;
 }
 
 #learn {
-  height: 66px;
-  width: 216px;
+  height: 50px;
+  width: 210px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #333333;
   background-color: #fff;
-  border-radius: 20px;
-  box-sizing: border-box;
+  border-radius: 10px;
   font-size: 20px;
   font-weight: 600;
   font-family: "rubik", sans-serif;
   cursor: pointer;
   text-decoration: none;
-  border: 8px solid #fdf2e9;
-  box-sizing: border-box;
   transition: all 0.5s;
-}
-
-#learn:focus {
-  border: 8px solid #f1b885;
+  border: 4px solid transparent;
+  box-sizing: border-box;
 }
 
 #learn:hover {
   background-color: transparent;
-  border: 8px solid #fff;
+  border: 4px solid #fff;
 }
 
 .people {
@@ -855,5 +810,222 @@ New Styling
 #icons {
   display: grid;
   grid-template-columns: auto auto auto auto;
+  padding: 100px 0px;
+  justify-content: space-evenly;
 }
-/*  */
+
+.icons-div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#icons i {
+  color: #e67e22;
+  background-color: #fdf2e9;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  border-radius: 50%;
+}
+
+.never-cook-again {
+  font-family: "rubik", sans-serif;
+  font-size: 25px;
+  font-weight: 900;
+  color: #333333;
+}
+
+.subs-cover {
+  font-family: "rubik", sans-serif;
+  font-size: 17px;
+  color: #555555;
+  line-height: 1.5;
+}
+
+#grid-flex {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1.5px solid #eeeeee;
+}
+
+#main-grid {
+  display: flex;
+  background-color: #e98f3e;
+  width: 80vw;
+  height: 62vh;
+  border-radius: 10px;
+  margin-bottom: 150px;
+  overflow: hidden;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+#email-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 62px;
+}
+
+.first-meal {
+  font-family: "rubik", sans-serif;
+  font-size: 45px;
+  color: #45260a;
+  font-weight: 750;
+  letter-spacing: -1px;
+}
+
+.healthy-first-meal {
+  font-family: "rubik", sans-serif;
+  font-size: 18px;
+  color: #45260a;
+  line-height: 1.8;
+}
+
+#meal-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+#input-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+
+#input-grid label {
+  display: block;
+  padding-bottom: 10px;
+}
+
+#select-where {
+  display: flex;
+  border: none;
+  padding: 10px 46px 10px 15px;
+  font-size: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+.input-flex {
+  display: flex;
+  border: none;
+  padding: 10px 60px 10px 15px;
+  font-size: 20px;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.input-flex:focus,
+#select-where:focus,
+#sign-up:focus {
+  outline: none;
+  box-shadow: 0 0 0 6px rgba(255, 254, 253, 0.5);
+}
+
+.names {
+  font-size: 18px;
+  font-family: "rubik", sans-serif;
+  color: currentColor;
+}
+
+#sign-up {
+  color: #fae5d3;
+  background-color: #45260a;
+  font-size: 21px;
+  font-weight: 700;
+  font-family: "rubik", sans-serif;
+  border: none;
+  cursor: pointer;
+  padding: 10px 95px 10px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  margin-top: 31px;
+}
+
+#sign-up:hover {
+  background-color: #ffffff;
+  color: #45260a;
+}
+
+#lady-eating {
+  width: 384px;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url(img/eating.jpg);
+  background-size: cover;
+}
+
+/* ************
+new styling**** */
+
+#footer {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  font-family: "rubik", sans-serif;
+  padding: 150px;
+}
+
+#footer img {
+  height: 20px;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-icons i {
+  font-size: 24px;
+  color: #686868;
+  margin-bottom: 25px;
+  transition: all 0.3s;
+}
+
+.footer-icons i:hover {
+  color: #555555;
+  cursor: pointer;
+}
+
+#copyright {
+  font-size: 14px;
+}
+
+.contact-us {
+  font-size: 20px;
+  color: #555555;
+  font-weight: 600;
+}
+
+.footer-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 16px;
+  color: #6b6d6b;
+}
+
+.footer-sub-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.div-div {
+  cursor: pointer;
+  width: 150px;
+  transition: all 0.3s;
+}
+
+.div-div:hover {
+  color: black;
+}
