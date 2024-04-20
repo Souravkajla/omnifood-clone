@@ -20,9 +20,15 @@
   height: 200px;
 }
 
+#bars {
+  display: none;
+  font-size: 20px;
+}
+
 #header {
   background-color: #fdf2e9;
   height: 10vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -50,44 +56,26 @@
   gap: 40px;
 }
 
-#how {
+.how,
+.price,
+.test,
+.meal {
   text-decoration: none;
   color: #333333;
   transition: all 0.3s;
   transition-timing-function: ease;
 }
 
-#meal {
-  text-decoration: none;
-  color: #333333;
-  transition: all 0.3s;
-  transition-timing-function: ease;
-}
-
-#test {
-  text-decoration: none;
-  color: #333333;
-  transition: all 0.3s;
-  transition-timing-function: ease;
-}
-
-#price {
-  text-decoration: none;
-  color: #333333;
-  transition: all 0.3s;
-  transition-timing-function: ease;
-}
-
-#how:hover,
-#meal:hover,
-#test:hover,
-#price:hover {
+.how:hover,
+.meal:hover,
+.test:hover,
+.price:hover {
   color: #d2711f;
   cursor: pointer;
   transition: all 0.3s;
 }
 
-#button {
+.button {
   font-size: 17px;
   font-family: "rubik", sans-serif;
   font-weight: 600;
@@ -104,8 +92,24 @@
   transition-timing-function: ease;
 }
 
-#button:hover {
+.button:hover {
   background-color: #d2711f;
+}
+
+.menu-txt {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-family: "rubik", sans-serif;
+  font-weight: 600;
+  gap: 30px;
+  margin-top: 250px;
+  text-align: center;
+  background-color: #fefae0;
+}
+
+#menu-txt {
+  display: none;
 }
 
 /* ******************** 
@@ -113,7 +117,8 @@ New Styling
 ******************** */
 
 #main {
-  height: 88vh;
+  height: 90vh;
+  width: 100%;
   background-color: #fdf2e9;
   display: grid;
   grid-template-columns: auto auto;
@@ -152,15 +157,11 @@ New Styling
 #spanbox {
   display: flex;
   gap: 40px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .eating {
-  height: 50px;
-  width: 210px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 12px 30px;
   background-color: #e67e22;
   border-radius: 10px;
   color: #fff;
@@ -177,11 +178,7 @@ New Styling
 }
 
 #learn {
-  height: 50px;
-  width: 210px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 10px 30px;
   color: #333333;
   background-color: #fff;
   border-radius: 10px;
@@ -287,7 +284,7 @@ New Styling
 New Styling
 ******************** */
 
-#works-dose {
+.works-dose {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -411,7 +408,7 @@ New Styling
   font-size: 15px;
 }
 
-.daily-dose {
+.daily-dose2 {
   font-size: 40px;
   font-family: "rubik", sans-serif;
   font-weight: 800;
@@ -584,19 +581,14 @@ New Styling
 ******************** */
 
 #hovrable-image-div {
-  background-color: #fdf2e9;
-  height: 110vh;
+  background-color: #fae5d3;
   margin-top: 120px;
   display: grid;
   grid-template-columns: auto auto;
   padding-left: 100px;
   padding-top: 90px;
+  padding-bottom: 50px;
 }
-
-/* #review-area {
-  padding-left: 120px;
-  padding-top: 100px;
-} */
 
 .testimonials {
   color: #cf711f;
@@ -606,18 +598,41 @@ New Styling
   letter-spacing: 1.5px;
 }
 
+.daily-dose3 {
+  font-size: 40px;
+  font-family: "rubik", sans-serif;
+  font-weight: 800;
+  color: #333333;
+  letter-spacing: -1px;
+}
+
 #customer-box {
   display: grid;
+  grid-template-columns: auto;
   gap: 100px;
   padding-top: 50px;
-  /* padding-left: 120px; */
   gap: 40px;
 }
 
 .customers {
   display: grid;
   grid-template-columns: auto auto;
-  width: 700px;
+}
+
+.first-customer {
+  width: 55%;
+}
+
+.first-customer2 {
+  width: 65%;
+}
+
+.first-customer3 {
+  width: 75%;
+}
+
+.first-customer4 {
+  width: 70%;
 }
 
 .customers img {
@@ -628,7 +643,6 @@ New Styling
 .customers2 {
   display: grid;
   grid-template-columns: auto auto;
-  width: 700px;
 }
 
 .customers2 img {
@@ -656,7 +670,6 @@ New Styling
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   padding: 10px;
-  /* padding-top: 110px; */
 }
 
 .gallery-images {
@@ -677,6 +690,14 @@ New Styling
 /* ******************** 
 New Styling
 ******************** */
+
+.works-dose2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 180px;
+  padding-top: 90px;
+}
 
 #grid-price-box {
   display: grid;
@@ -811,13 +832,14 @@ New Styling
   display: grid;
   grid-template-columns: auto auto auto auto;
   padding: 100px 0px;
-  justify-content: space-evenly;
+  margin-left: 100px;
 }
 
 .icons-div {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 80%;
 }
 
 #icons i {
@@ -844,6 +866,7 @@ New Styling
   font-size: 17px;
   color: #555555;
   line-height: 1.5;
+  width: 100%;
 }
 
 #grid-flex {
@@ -855,8 +878,6 @@ New Styling
 #main-grid {
   display: flex;
   background-color: #e98f3e;
-  width: 80vw;
-  height: 62vh;
   border-radius: 10px;
   margin-bottom: 150px;
   overflow: hidden;
@@ -864,8 +885,7 @@ New Styling
 }
 
 #email-grid {
-  display: grid;
-  grid-template-columns: auto auto;
+  display: flex;
   gap: 62px;
 }
 
@@ -888,8 +908,9 @@ New Styling
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin-top: 50px;
-  margin-left: 50px;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-bottom: 40px;
 }
 
 #input-grid {
@@ -963,6 +984,7 @@ New Styling
     ),
     url(img/eating.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 /* ************
@@ -970,7 +992,7 @@ new styling**** */
 
 #footer {
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: auto auto;
   font-family: "rubik", sans-serif;
   padding: 150px;
 }
@@ -1028,4 +1050,316 @@ new styling**** */
 
 .div-div:hover {
   color: black;
+}
+
+#account-div {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+#company-div {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+@media screen and (max-width: 660px) {
+  #maintext {
+    display: none;
+  }
+  #logo {
+    height: 20px;
+    margin-left: 10px;
+  }
+  #main {
+    height: 100%;
+  }
+  #main1 {
+    padding-left: 0px;
+    padding-top: 20px;
+  }
+  #bigtxt {
+    font-size: 30px;
+    text-align: center;
+  }
+  #description-text {
+    font-size: 14px;
+    text-align: center;
+  }
+  #spanbox {
+    gap: 20px;
+    justify-content: center;
+  }
+  .eating {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  #learn {
+    padding: 8px 20px;
+    font-size: 16px;
+  }
+  #image {
+    margin-top: -40px;
+  }
+  #main {
+    grid-template-columns: auto;
+  }
+  #heroimage {
+    display: flex;
+    justify-content: center;
+  }
+  #hero {
+    height: 250px;
+    transform: rotateY(0deg);
+    padding-bottom: 50px;
+  }
+  #hero:hover {
+    margin-top: 0px;
+    transform: rotateY(0deg);
+  }
+  .people {
+    height: 30px;
+  }
+  #image {
+    justify-content: center;
+  }
+  #num-del {
+    flex-direction: column;
+    text-align: center;
+  }
+  #num {
+    font-size: 14px;
+  }
+  #delivered {
+    font-size: 14px;
+  }
+  .display-none {
+    display: none;
+  }
+  .capstext {
+    font-size: 12px;
+  }
+  #business-logos img {
+    height: 12px;
+  }
+  .logo-images {
+    gap: 10px;
+  }
+  .works-dose {
+    gap: 5px;
+    padding-left: 10px;
+    padding-top: 20px;
+  }
+  .works {
+    font-size: 12px;
+  }
+  .daily-dose {
+    font-size: 24px;
+    text-align: left;
+  }
+  .daily-dose2 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .screentxt {
+    flex-direction: column-reverse;
+    padding-left: 10px;
+    padding-top: 90px;
+  }
+  .screentxt2 {
+    flex-direction: column;
+    padding-left: 10px;
+    padding-top: 90px;
+  }
+  .number-txt {
+    gap: 5px;
+    text-align: center;
+  }
+  .number {
+    font-size: 50px;
+  }
+  .tell-what {
+    font-size: 20px;
+  }
+  .never-again {
+    font-size: 12px;
+    padding-top: 20px;
+  }
+  .phone-div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -40px;
+  }
+  .screen,
+  .screen2 {
+    height: 200px;
+  }
+  .circle {
+    display: none;
+  }
+  #grid {
+    grid-template-columns: auto;
+    margin-left: 0px;
+    gap: 30px;
+  }
+  .meal-image:hover {
+    margin-top: 0px;
+  }
+  #checkfont {
+    align-items: center;
+  }
+  #link {
+    margin-top: 10px;
+  }
+  #hovrable-image-div {
+    padding-left: 10px;
+    padding-top: 60px;
+    grid-template-columns: auto;
+  }
+  .testimonials {
+    font-size: 12px;
+  }
+  .daily-dose3 {
+    font-size: 24px;
+  }
+  .customers img,
+  .customers2 img {
+    height: 40px;
+  }
+  .customers,
+  .customers2 {
+    grid-template-columns: auto;
+    margin-left: 10px;
+    gap: 20px;
+  }
+  .customer-review {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+  .first-customer,
+  .first-customer2,
+  .first-customer3,
+  .first-customer4 {
+    width: 70%;
+  }
+  .gallery {
+    gap: 5px;
+    padding: 1px;
+    padding-top: 50px;
+  }
+  .gallery-images {
+    height: 110px;
+    width: 110px;
+  }
+  .works-dose2 {
+    padding-left: 10px;
+  }
+  #grid-price-box {
+    grid-template-columns: auto;
+  }
+  #starter-price {
+    padding-bottom: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .month-price {
+    font-size: 12px;
+  }
+  #starter-price2 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  #gst {
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+  }
+  #icons {
+    grid-template-columns: auto;
+    justify-content: start;
+    margin-left: 20px;
+    padding: 80px 0px;
+  }
+  #icons i {
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+  }
+  .never-cook-again {
+    font-size: 20px;
+  }
+  .subs-cover {
+    font-size: 14px;
+  }
+  #main-grid {
+    width: 95%;
+  }
+  #email-grid {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  #input-grid {
+    grid-template-columns: auto;
+  }
+  #meal-txt {
+    padding-top: 0px;
+    padding-left: 10px;
+  }
+  .first-meal {
+    font-size: 30px;
+    width: 90vw;
+    word-wrap: break-word;
+  }
+  .healthy-first-meal {
+    font-size: 12px;
+    width: 90vw;
+    word-wrap: break-word;
+  }
+  #sign-up {
+    padding: 20px 95px 20px;
+  }
+  #lady-eating {
+    height: 300px;
+    width: 490px;
+    background-position: left -80px;
+  }
+  #footer {
+    grid-template-columns: auto;
+    gap: 80px;
+    padding: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow: hidden;
+  }
+  #account-div {
+    grid-row: 1;
+  }
+  .contact-us {
+    font-size: 14px;
+  }
+  .footer-txt {
+    font-size: 10px;
+    width: 30vw;
+    margin-left: 5vw;
+  }
+  #bars {
+    display: block;
+    z-index: 2;
+  }
+  #bars i {
+    margin-left: -50px;
+  }
+  #menu-txt {
+    z-index: 1;
+    position: absolute;
+  }
+  .menu-txt {
+    padding: 100px 100px 100px 120px;
+    margin-bottom: -100px;
+  }
+  .how,
+  .price,
+  .test,
+  .meal {
+    width: 40vw;
+  }
 }
