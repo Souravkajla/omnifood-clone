@@ -24,3 +24,12 @@ function scrollFunction() {
     headerhead.style.position = "relative";
   }
 }
+
+function showme() {
+  var menutxt = document.getElementById("menu-txt");
+  if (menutxt.style.display === "block") {
+    menutxt.style.display = "none";
+  } else {
+    menutxt.style.display = "block";
+  }
+}
